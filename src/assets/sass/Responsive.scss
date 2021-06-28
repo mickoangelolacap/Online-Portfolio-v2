@@ -1,0 +1,341 @@
+@import './Variables.scss';
+
+// Screens larger than 1920x1080
+@media only screen and (min-width : 1921px) {
+    
+}
+
+// 1650 x 1050 Desktop
+@media only screen and (max-width: 1680px) {
+    #landing {
+        .title2 {
+            font-size: 10em;
+        }
+    }
+    #footer {
+        font-size: 1.4rem;
+    }
+}
+
+// 1366 x 768 Desktop
+@media only screen and (max-width: 1366px) {
+    #landing {
+        font-size: 1rem;
+        .scroll {
+            #buttonToggle {
+                font-size: 1.4rem;
+                padding: 1.4rem 3rem;
+            }
+            img {
+                height: 8rem;
+            }
+        }
+    }
+    #header {
+        font-size: 1.4rem;
+    }
+    #about {
+        font-size: 1.4rem;
+        white-space: pre-wrap;
+        .primaryTitle {
+            top: -18%;
+        }
+        .primaryTitleBG {
+            top: -12%;
+            left: 73%;
+        }
+    }
+    #works {
+        font-size: 1.4rem;
+    }
+    #designDevelop {
+        font-size: 1rem;
+        .ringBell {
+            font-size: 1.4rem;
+            padding: 1.4rem 3rem;
+        }
+    }
+    #footer {
+        font-size: 1rem;
+    }
+}
+
+// 1024 x 1366 Ipad Pro
+@media only screen and (max-width: 1024px) {
+    html {
+        cursor: none;
+    }
+    #about {
+        #selfie {
+            max-height: 60rem;
+        }
+        .primaryTitleBG {
+            font-size: 14em;
+        }
+        .aboutSub {
+            font-size: 2em;
+        }
+        .aboutBGContainer {
+            #aboutBG {
+                min-height: 50vh;
+            }
+        }
+    }
+    #works {
+        font-size: 1.2rem;
+        .workContent {
+            padding-left: 0;
+        }
+    }
+    #footer {
+        .footerWrapper {
+            .logoContainer {
+                padding: 5rem 1.5rem;
+                .sayHi {
+                    top: 150%;
+                }
+                .arrowUp {
+                    left: 103%;
+                    top: 180%;
+                }
+            }
+        }
+    }
+}
+
+// 768 x 1024 Ipad
+@media only screen and (max-width: 768px) {
+    #header {
+        #iconToggle {
+            padding: 0 8rem 0 0;
+        }
+        .ml-auto {
+            display: flex;
+            align-items: flex-end;
+            .nav-link {
+                padding-top: 1em;
+            }
+        }
+        .navbar-toggler {
+            border: none;
+            img {
+                height: 100%;
+                min-height: 1.2rem;
+            }
+        }
+    }
+    #landing {
+        #title1, .title2, #title3 {
+            text-align: center;
+        }
+        .title2 {
+            display: block;
+        }
+        #title3 {
+            padding: 0;
+        }
+    }
+    #about {
+        font-size: 1rem;
+        #selfie {
+            max-height: 40rem;
+        }
+        .primaryTitleBG {
+            font-size: 14em;
+        }
+        .aboutBGContainer {
+            top: 32%;
+        }
+        .hobbies {
+            .hobbyContainer {
+                .hobbyImages {
+                    height: 100%;
+                    max-height: 5rem;
+                }
+            }
+        }
+    }
+    #works {
+        font-size: 1rem;
+        .workContainer {
+            .primaryTitleBG {
+                font-size: 14em;
+            }
+        }
+        .workContent {
+            #viewWeb {
+                font-size: 1.4rem;
+                padding: 1.6rem 2rem;
+            }
+            #visitMock {
+                font-size: 1.4rem;
+                padding: 1.6rem 2rem;
+            }
+        }
+    }
+    #designDevelop {
+        font-size: .8rem;
+    }
+    #footer {
+        .footerWrapper {
+            .logoContainer {
+                .sayHi {
+                    top: 100%;
+                }
+                .arrowUp {
+                    left: 5%;
+                    top: 200%;
+                }
+            }
+        }
+    }
+}
+
+// 375 x 812 Mobile - largest width for mobile
+@media only screen and (max-width: 414px) {
+    #toggle {
+        padding: 2rem;
+    }
+    #header {
+        padding-top: 2rem;
+        #navbarBrand {
+            font-size: 2em;
+        }
+        #iconToggle {
+            padding-right: 3rem;
+        }
+    }
+    #landing {
+        font-size: .8rem;
+        padding: 0 2rem;
+        #title1 {
+            padding-bottom: .5em;
+        }
+        #title3 {
+            padding-top: 1em;
+        }
+        .title2 {
+            font-size: 6em;
+        }
+    }
+    #about {
+        #selfie {
+            max-height: 50rem;
+        }
+        .primaryTitleBG {
+            display: none;
+        }
+        .aboutContent {
+            padding: 3.2rem 2rem;
+            text-align: center;
+            font-size: 1.1rem;
+            .subtitle {
+                padding-bottom: 1.4rem;
+            }
+            .generalPara {
+                padding: 0 0 3.2rem;
+            }
+        }
+        .aboutBGContainer {
+            height: 100%;
+            top: 32%;
+            img {
+                height: 100vh;
+            }
+        }
+        .hobbies {
+            padding: 10rem 2rem;
+            .col {
+                padding: 0;
+                width: 3.2rem;
+                display: flex;
+                justify-content: center;
+            }
+            .hobbyContainer {
+                .hobbyImages {
+                    height: 100%;
+                    max-height: 3.2rem;
+                }
+            }
+        }
+        .col-md-4 {
+            display: flex;
+            justify-content: center;
+        }
+        .fullStackContainer, .otherContainer {
+            padding-top: 4.2rem;
+        }
+    }
+    #works {
+        .workContainer {
+            padding: 0 2rem 5rem;
+            .col-md-7 {
+                padding: 0;
+            }
+            .primaryTitle {
+                font-size: 9.4rem;
+            }
+            .primaryTitleBG {
+                display: none;
+            }
+            .sampleImage {
+                height: 100%;
+                max-height: 21em;
+            }
+        }
+        .workContent {
+            padding: 3.8rem 0 0;
+        }
+        .projectContainer {
+            .projectContentContainer {
+                padding: 6rem 2rem;
+                .col-sm-7 {
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .work-modal {
+        max-width: 97% !important;
+    }
+    #designDevelop {
+        font-size: .8rem;
+        .typeContainer {
+            display: block;
+            padding-bottom: 3.2rem;
+            .designTitle {
+                padding: 0;
+            }
+        }
+    }
+    #footer {
+        .footerWrapper {
+            .socMedContainer {
+                padding: 4.2rem 2rem;
+            }
+            .logoContainer {
+                padding-top: 0;
+                .generalPara {
+                    font-size: 1.2rem;
+                }
+                .sayHi {
+                    font-size: 8rem;
+                    top: 75%;
+                }
+                .arrowUp {
+                    max-height: 2rem;
+                    left: 110%;
+                    top: 150%;
+                }
+            }
+        }
+        .footerContentDark {
+            max-height: 80%;
+            padding: 2rem;
+        }
+        .footerContentLight {
+            max-height: 80%;
+            padding: 2rem;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+const ImagesLang = {
+    Html : require('./Html.png').default,
+    Css : require('./Css.png').default,
+    Js : require('./Js.png').default,
+    Bootstrap : require('./Bootstrap.png').default,
+    Sass : require('./Sass.png').default,
+    React : require('./React.png').default,
+    Mongodb : require('./Mongodb.png').default,
+    Express : require('./Express.png').default,
+    Node : require('./Node.png').default,
+    Graphql : require('./Graphql.png').default,
+    Laravel : require('./Laravel.png').default,
+    Mysql : require('./Mysql.png').default,
+    Php : require('./Php.png').default,
+    Github : require('./Github.png').default,
+    Heroku : require('./Heroku.png').default,
+    Figma : require('./Figma.png').default,
+    Photoshop : require('./Photoshop.png').default,
+    Filmora : require('./Filmora.png').default,
+    Autocad : require('./Autocad.png').default,
+    Sketchup : require('./Sketchup.png').default,
+    Bagisto : require('./Bagisto.png').default,
+}
+
+export default ImagesLang;

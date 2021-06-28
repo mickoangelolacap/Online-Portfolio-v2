@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+  ::-webkit-scrollbar {
+    display: none
+  }
+}
+
+.work-modal {
+  width: 100% !important;
+  max-width: 70% !important;
+  .workModalHeader {
+    border: none;
+    padding: 1rem 2rem;
+    .close {
+      font-size: 3rem;
+    }
+  }
+  .workModalBody {
+    padding: 0;
+  }
+}
+
+@import './assets/sass/Variables.scss';
+@import './assets/sass/Toggle.scss';
+@import './assets/sass/ContactModal.scss';
+@import './assets/sass/Header.scss';
+@import './assets/sass/Landing.scss';
+@import './assets/sass/About.scss';
+@import './assets/sass/Works.scss';
+@import './assets/sass/DesignDevelop.scss';
+@import './assets/sass/Footer.scss';
+@import './assets/sass/Responsive.scss';

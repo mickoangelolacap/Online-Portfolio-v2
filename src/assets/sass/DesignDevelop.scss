@@ -1,0 +1,46 @@
+@import './Variables.scss';
+
+#designDevelop {
+    font-size: 1.6rem;
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10em 0 5em;
+    .designDevelopBG {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .typeContainer {
+        display: flex;
+        .designTitle {
+            font-size: 8em;
+            font-weight: 700;
+            padding: 0 3rem 4rem 0;
+        }
+        .developTitle {
+            font-size: 8em;
+            font-weight: 700;
+        }
+    }
+    .secondaryTitle {
+        font-size: 2em;
+        font-family: 'Montserrat', 'sans-serif';
+        font-weight: 300;
+        opacity: 50%;
+        padding-bottom: 1.5em;
+    }
+    .ringBell {
+        font-size: 1.8rem;
+        font-weight: 700;
+        padding: 2rem 3.4rem;
+        border: .3rem solid $accent;
+    }
+}

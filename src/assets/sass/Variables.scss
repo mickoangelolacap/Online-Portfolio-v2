@@ -1,0 +1,11 @@
+$theme-colors: (
+    "light": #f9f6ef,
+    "dark": #111,
+    "primary" : #faa307
+);
+$accent : #faa307;
+$dark : #111;
+$light : #f9f6ef;
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
