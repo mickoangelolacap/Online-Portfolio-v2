@@ -30,6 +30,20 @@ html {
 }
 
 @import './assets/sass/Variables.scss';
+
+.opacityDark {
+  color: rgba($color: $light, $alpha: .5)
+}
+.opacityLight {
+  color: rgba($color: $dark, $alpha: 1)
+}
+.opacityDarkBG {
+  color: rgba($color: $light, $alpha: .05)
+}
+.opacityLightBG {
+  color: rgba($color: $dark, $alpha: .05)
+}
+
 @import './assets/sass/Toggle.scss';
 @import './assets/sass/ContactModal.scss';
 @import './assets/sass/Header.scss';

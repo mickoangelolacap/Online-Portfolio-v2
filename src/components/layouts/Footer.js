@@ -16,11 +16,11 @@ const Footer = ({theme}) => {
                             <Row>
                                 <Col sm={12}>
                                     <h1 className="footerHead">Phone</h1>
-                                    <p className="footerPara">0956-872-0280</p>
+                                    <p className={`footerPara ${theme === 'dark' ? 'opacityDark' : 'opacityLight'}`}>0956-872-0280</p>
                                 </Col>
                                 <Col sm={12} className="mt-5">
                                     <h1 className="footerHead">Address</h1>
-                                    <p className="footerPara">Rizal, Philippines</p>
+                                    <p className={`footerPara ${theme === 'dark' ? 'opacityDark' : 'opacityLight'}`}>Rizal, Philippines</p>
                                 </Col>
                             </Row>
                         </Col>
@@ -30,44 +30,44 @@ const Footer = ({theme}) => {
                                 <Col xs={6}>
                                     <a href="https://www.facebook.com/mickoangelolacap/" target="_blank" rel="noreferrer" className={theme === 'dark' ? 'socmedDark' : 'socmedLight'}>
                                         <Image src={theme === 'dark' ? SocmedImages.FacebookDark : SocmedImages.FacebookLight} className="socmedImg" fluid/>
-                                        <p className="footerPara">Facebook</p>
+                                        <p className={`footerPara ${theme === 'dark' ? 'opacityDark' : 'opacityLight'}`}>Facebook</p>
                                     </a>
                                 </Col>
                                 <Col xs={6}>
                                     <a href="https://www.instagram.com/mickoangelolacap/" target="_blank" rel="noreferrer" className={theme === 'dark' ? 'socmedDark' : 'socmedLight'}>
                                         <Image src={theme === 'dark' ? SocmedImages.InstagramDark : SocmedImages.InstagramLight} className="socmedImg" fluid/>
-                                        <p className="footerPara">Instagram</p>
+                                        <p className={`footerPara ${theme === 'dark' ? 'opacityDark' : 'opacityLight'}`}>Instagram</p>
                                     </a>
                                 </Col>
                                 <Col xs={6}>
                                     <a href="https://t.me/mickoangelolacap" target="_blank" rel="noreferrer" className={theme === 'dark' ? 'socmedDark' : 'socmedLight'}>
                                         <Image src={theme === 'dark' ? SocmedImages.TelegramDark : SocmedImages.TelegramLight} className="socmedImg" fluid/>
-                                        <p className="footerPara">Telegram</p>
+                                        <p className={`footerPara ${theme === 'dark' ? 'opacityDark' : 'opacityLight'}`}>Telegram</p>
                                     </a>
                                 </Col>
                                 <Col xs={6}>
                                     <a href="https://github.com/mickoangelolacap" target="_blank" rel="noreferrer" className={theme === 'dark' ? 'socmedDark' : 'socmedLight'}>
                                         <Image src={theme === 'dark' ? SocmedImages.GithubDark : SocmedImages.GithubLight} className="socmedImg" fluid/>
-                                        <p className="footerPara">Github</p>
+                                        <p className={`footerPara ${theme === 'dark' ? 'opacityDark' : 'opacityLight'}`}>Github</p>
                                     </a>
                                 </Col>
                                 <Col xs={6}>
                                     <a href="https://www.linkedin.com/in/mickoangelolacap/" target="_blank" rel="noreferrer" className={theme === 'dark' ? 'socmedDark' : 'socmedLight'}>
                                         <Image src={theme === 'dark' ? SocmedImages.LinkedinDark : SocmedImages.LinkedinLight} className="socmedImg" fluid/>
-                                        <p className="footerPara">LinkedIn</p>
+                                        <p className={`footerPara ${theme === 'dark' ? 'opacityDark' : 'opacityLight'}`}>LinkedIn</p>
                                     </a>
                                 </Col>
                                 <Col xs={6}>
                                     <a href="https://www.behance.net/mickoalacap" target="_blank" rel="noreferrer" className={theme === 'dark' ? 'socmedDark' : 'socmedLight'}>
                                         <Image src={theme === 'dark' ? SocmedImages.BehanceDark : SocmedImages.BehanceLight} className="socmedImg" fluid/>
-                                        <p className="footerPara">Behance</p>
+                                        <p className={`footerPara ${theme === 'dark' ? 'opacityDark' : 'opacityLight'}`}>Behance</p>
                                     </a>
                                 </Col>
                             </Row>
                         </Col>
                         <Col xl={6} xs={12} className="logoContainer">
                             <h1 className="logo">MA<span className="text-primary">C</span>L<span className="text-primary">.</span></h1>
-                            <p className="generalPara">&#169; 2020 | Micko Angelo Cequeña Lacap</p>
+                            <p className={`generalPara ${theme === 'dark' ? 'opacityDark' : 'opacityLight'}`}>&#169; 2020 | Micko Angelo Cequeña Lacap</p>
                             <ScrollAnimation animateIn="fadeIn">
                                 <h1 className="sayHi">Say Hi.</h1>
                             </ScrollAnimation>

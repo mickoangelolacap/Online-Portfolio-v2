@@ -31,7 +31,7 @@ const DesignDevelop = ({theme}) => {
                             />
                         </h1>
                     </div>
-                    <h2 className="secondaryTitle">Contact me and we'll see.</h2>
+                    <h2 className={`secondaryTitle ${theme === 'dark' ? 'opacityDark' : 'opacityLight'}`}>Contact me and we'll see.</h2>
                     <Button variant="outline-primary ringBell" onClick={() => setShowModal(true)}>Ring a Bell</Button>
                     <Image src={theme === 'dark' ? DarkBG : LightBG} className="designDevelopBG"/>
             </Container>

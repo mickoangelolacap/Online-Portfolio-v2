@@ -21,7 +21,7 @@ import WorkContent from './WorkContent'
 import WorkThumbnail from './WorkThumbnail'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-const Works = () => {
+const Works = ({theme}) => {
 
     const workLists = [
         {
@@ -75,7 +75,7 @@ const Works = () => {
     // }
     
     const WorkSamples = workLists.map((work, index) => <WorkSample key={index} index={index} work={work} />)
-    const WorkContents = workLists.map((work, index) => <WorkContent key={index} index={index} work={work} workLists={workLists}/>)
+    const WorkContents = workLists.map((work, index) => <WorkContent key={index} index={index} work={work} workLists={workLists} theme={theme}/>)
     const WorkThumbnails = workLists.map((work, index) => <WorkThumbnail key={index} index={index} work={work}/>)
 
     const projectLists = [
@@ -115,7 +115,7 @@ const Works = () => {
     ]
 
     const ProjectSamples = projectLists.map((work, index) => <WorkSample key={index} index={index} work={work} />)
-    const ProjectContents = projectLists.map((work, index) => <WorkContent key={index} index={index} work={work} workLists={projectLists}/>)
+    const ProjectContents = projectLists.map((work, index) => <WorkContent key={index} index={index} work={work} workLists={projectLists} theme={theme}/>)
     const ProjectThumbnails = projectLists.map((work, index) => <WorkThumbnail key={index} index={index} work={work}/>)
 
     return (
@@ -125,7 +125,7 @@ const Works = () => {
                     <Row className="workContainer">
                         <Col md={7}>
                             <h1 className="primaryTitle">Works.</h1>
-                            <h1 className="primaryTitleBG">Works.</h1>
+                            <h1 className={`primaryTitleBG ${theme === 'dark' ? 'opacityDarkBG' : 'opacityLightBG'}`}>Works.</h1>
                             <Tab.Content>
                                 {WorkSamples}
                             </Tab.Content>

@@ -1,10 +1,10 @@
 import {Image} from 'react-bootstrap'
 
-const Language = ({language}) => {
+const Language = ({language, theme}) => {
     return (
         <div className="langContainer">
             <Image src={language.image}/>
-            <p className="langText">{language.text}</p>
+            <p className={`langText ${theme === 'dark' ? 'opacityDark' : 'opacityLight'}`}>{language.text}</p>
         </div>
     )
 }

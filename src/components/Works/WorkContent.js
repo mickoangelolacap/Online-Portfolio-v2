@@ -2,7 +2,7 @@ import { useState } from 'react';
 import {Button, Tab, Modal, Image} from 'react-bootstrap'
 import LanguageUsed from './LanguageUsed'
 
-const WorkContent = ({work, index, workLists}) => {
+const WorkContent = ({work, index, workLists, theme}) => {
 
     const [show, setShow] = useState(false);
 
@@ -14,7 +14,7 @@ const WorkContent = ({work, index, workLists}) => {
         <Tab.Pane eventKey={index}>
             <h2 className="subtitle">{work.title}</h2>
             <span className="workYear">{work.year}</span>
-            <p className="generalPara">{work.text}</p>
+            <p className={`generalPara ${theme === 'dark' ? 'opacityDark' : 'opacityLight'}`}>{work.text}</p>
             <div>
                 {Lang}
             </div>

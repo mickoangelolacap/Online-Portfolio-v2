@@ -148,9 +148,9 @@ const About = ({theme}) => {
         
     ]
 
-    const FrontendLang = Languages[0].FrontLanguages.map((language, index) => <Language key={index} language={language} />)
-    const FullStackLang = Languages[0].FullLanguages.map((language, index) => <Language key={index} language={language} />)
-    const OtherLang = Languages[0].OtherLanguages.map((language, index) => <Language key={index} language={language} />)
+    const FrontendLang = Languages[0].FrontLanguages.map((language, index) => <Language key={index} language={language} theme={theme}/>)
+    const FullStackLang = Languages[0].FullLanguages.map((language, index) => <Language key={index} language={language} theme={theme}/>)
+    const OtherLang = Languages[0].OtherLanguages.map((language, index) => <Language key={index} language={language} theme={theme}/>)
 
     return (
         <div id="about">
@@ -159,7 +159,7 @@ const About = ({theme}) => {
                     <Row>
                         <Col sm={5}>
                             <h1 className="primaryTitle">About.</h1>
-                            <h1 className="primaryTitleBG">About.</h1>
+                            <h1 className={`primaryTitleBG ${theme === 'dark' ? 'opacityDarkBG' : 'opacityLightBG'}`}>About.</h1>
                             <Image id="selfie" src={Selfie} />
                         </Col>
                         <Col sm={7} className="aboutContent">
@@ -169,12 +169,12 @@ const About = ({theme}) => {
                                 <Col sm={6}>
                                     <Image src={theme === 'dark' ? WebDevDark : WebDevLight}/>
                                     <h3 className="subtitle">Web Development</h3>
-                                    <p className="generalPara"> <span>Responsiveness</span> is a must. It should work across all devices. Also, It needs to be fast.</p>
+                                    <p className={`generalPara ${theme === 'dark' ? 'opacityDark' : 'opacityLight'}`}> <span>Responsiveness</span> is a must. It should work across all devices. Also, It needs to be fast.</p>
                                 </Col>
                                 <Col sm={6}>
                                     <Image src={theme === 'dark' ? WebDesDark : WebDesLight}/>
                                     <h3 className="subtitle">Web Design</h3>
-                                    <p className="generalPara">I always make sure that the design is for the people who will use it. <span>Figma</span> is my main man.</p>
+                                    <p className={`generalPara ${theme === 'dark' ? 'opacityDark' : 'opacityLight'}`}>I always make sure that the design is for the people who will use it. <span>Figma</span> is my main man.</p>
                                 </Col>
                             </Row>
                         </Col>
