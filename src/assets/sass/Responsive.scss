@@ -192,7 +192,7 @@
 }
 
 // 375 x 812 Mobile - largest width for mobile
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 480px) {
     #toggle {
         padding: 2rem;
     }
@@ -224,6 +224,9 @@
         }
         .primaryTitleBG {
             display: none;
+        }
+        .aboutImage {
+            text-align: center;
         }
         .aboutContent {
             padding: 3.2rem 2rem;

@@ -157,7 +157,7 @@ const About = ({theme}) => {
             <Container>
                 <ScrollAnimation animateIn="fadeInUp">
                     <Row>
-                        <Col sm={5}>
+                        <Col sm={5} className="aboutImage">
                             <h1 className="primaryTitle">About.</h1>
                             <h1 className={`primaryTitleBG ${theme === 'dark' ? 'opacityDarkBG' : 'opacityLightBG'}`}>About.</h1>
                             <Image id="selfie" src={Selfie} />
