@@ -16,6 +16,9 @@ import CovidThumbnail from '../../assets/images/CovidThumbnail.png'
 import GensanMockup from '../../assets/images/GensanMockup.png'
 import UltraMockup from '../../assets/images/UltraMockup.png'
 import ImagesLang from '../../assets/images/Languages'
+import DepressionMockup from '../../assets/images/DepressionMockup.png'
+import DepressionThumbnail from '../../assets/images/DepressionThumbnail.png'
+import DepressionSample from '../../assets/images/DepressionSample.png'
 import WorkSample from './WorkSample'
 import WorkContent from './WorkContent'
 import WorkThumbnail from './WorkThumbnail'
@@ -46,6 +49,18 @@ const Works = ({theme}) => {
             website : false,
             mockup : true,
             mockupImage : UltraMockup
+        },
+        {
+            title : "Help Depression",
+            year : '2021',
+            sample : DepressionSample,
+            thumbnail : DepressionThumbnail,
+            text : "Design & Develop",
+            language : [ImagesLang.React, ImagesLang.Bootstrap, ImagesLang.Sass, ImagesLang.Github, ImagesLang.Figma],
+            website : true,
+            webURL : 'https://help.classify.com.ph/',
+            mockup : true,
+            mockupImage : DepressionMockup
         },
         {
             title : "RRSSI",
