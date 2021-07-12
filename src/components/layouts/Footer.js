@@ -7,6 +7,11 @@ import arrowLight from '../../assets/images/arrowLight.png'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 const Footer = ({theme}) => {
+
+    const topScroll = () => {
+        window.scrollTo(0,0)
+    }
+
     return (
         <Container id="footer" fluid>
             <Row className={theme === 'dark' ? 'footerContentDark' : 'footerContentLight'}>
@@ -71,9 +76,9 @@ const Footer = ({theme}) => {
                             <ScrollAnimation animateIn="fadeIn">
                                 <h1 className="sayHi">Say Hi.</h1>
                             </ScrollAnimation>
-                            <a href="#header">
-                                <Image src={theme === 'dark' ? arrowDark : arrowLight} className="arrowUp" fluid/>
-                            </a>
+                            {/* <a href="#header"> */}
+                                <Image src={theme === 'dark' ? arrowDark : arrowLight} className="arrowUp" onClick={topScroll} fluid/>
+                            {/* </a> */}
                         </Col>
                     </Row>
                 </Col>
