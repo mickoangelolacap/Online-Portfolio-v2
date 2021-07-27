@@ -24,7 +24,7 @@ const Header = ({theme, toggleTheme}) => {
                         <Nav.Link className="" href="#about">About</Nav.Link>
                         <Nav.Link className="navLinks" href="#works">Works</Nav.Link>
                         <Nav.Link className="navLinks text-primary" onClick={() => setShowModal(true)}>Let's Talk</Nav.Link>
-                        <Nav.Link className="navLinks" href="#">Resume / CV</Nav.Link>
+                        <Nav.Link className="navLinks" target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1tkKj2bYvoB_ugfjamxxr8t_KxlKMEOrg/view?usp=sharing">Resume / CV</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

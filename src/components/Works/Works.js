@@ -19,6 +19,8 @@ import ImagesLang from '../../assets/images/Languages'
 import DepressionMockup from '../../assets/images/DepressionMockup.png'
 import DepressionThumbnail from '../../assets/images/DepressionThumbnail.png'
 import DepressionSample from '../../assets/images/DepressionSample.png'
+import ClassifyThumbnail from '../../assets/images/ClassifyThumbnail.png'
+import ClassifySample from '../../assets/images/ClassifySample.png'
 import WorkSample from './WorkSample'
 import WorkContent from './WorkContent'
 import WorkThumbnail from './WorkThumbnail'
@@ -61,6 +63,17 @@ const Works = ({theme}) => {
             webURL : 'https://help.classify.com.ph/',
             mockup : true,
             mockupImage : DepressionMockup
+        },
+        {
+            title : "Classify Website",
+            year : '2021',
+            sample : ClassifySample,
+            thumbnail : ClassifyThumbnail,
+            text : "Design & Develop",
+            language : [ImagesLang.React, ImagesLang.Bootstrap, ImagesLang.Sass, ImagesLang.Github, ImagesLang.Figma],
+            website : true,
+            webURL : 'https://www.classify.com.ph/',
+            mockup : false,
         },
         {
             title : "RRSSI",
