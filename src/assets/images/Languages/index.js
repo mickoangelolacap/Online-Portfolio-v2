@@ -19,6 +19,8 @@ import Filmora from "./Filmora.png";
 import Autocad from "./Autocad.png";
 import Sketchup from "./Sketchup.png";
 import Bagisto from "./Bagisto.png";
+import Typescript from "./Typescript.png";
+import Mui from "./Mui.png";
 
 const ImagesLang = {
   Html: Html,
@@ -42,6 +44,8 @@ const ImagesLang = {
   Autocad: Autocad,
   Sketchup: Sketchup,
   Bagisto: Bagisto,
+  Typescript: Typescript,
+  Mui: Mui,
 };
 
 export default ImagesLang;

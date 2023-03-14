@@ -60,16 +60,16 @@ const About = ({ theme }) => {
     {
       FrontLanguages: [
         {
-          image: ImagesLang.Html,
-          text: "HTML 5",
+          image: ImagesLang.React,
+          text: "ReactJS",
         },
         {
-          image: ImagesLang.Css,
-          text: "CSS 3",
+          image: ImagesLang.Typescript,
+          text: "Typescript",
         },
         {
-          image: ImagesLang.Js,
-          text: "Javascript",
+          image: ImagesLang.Mui,
+          text: "Material UI",
         },
         {
           image: ImagesLang.Bootstrap,
@@ -80,8 +80,16 @@ const About = ({ theme }) => {
           text: "Sass",
         },
         {
-          image: ImagesLang.React,
-          text: "React",
+          image: ImagesLang.Html,
+          text: "HTML 5",
+        },
+        {
+          image: ImagesLang.Css,
+          text: "CSS 3",
+        },
+        {
+          image: ImagesLang.Js,
+          text: "Javascript",
         },
       ],
 
@@ -106,14 +114,6 @@ const About = ({ theme }) => {
           image: ImagesLang.Laravel,
           text: "Laravel",
         },
-        {
-          image: ImagesLang.Mysql,
-          text: "MySQL",
-        },
-        {
-          image: ImagesLang.Php,
-          text: "PHP",
-        },
       ],
 
       OtherLanguages: [
@@ -124,10 +124,6 @@ const About = ({ theme }) => {
         {
           image: ImagesLang.Figma,
           text: "Figma",
-        },
-        {
-          image: ImagesLang.Heroku,
-          text: "Heroku",
         },
         {
           image: ImagesLang.Filmora,
@@ -235,13 +231,13 @@ const About = ({ theme }) => {
             </Col>
             <Col md={4} xs={12}>
               <div>
-                <h2 className="langSub">Front-End</h2>
+                <h2 className="langSub">Front End</h2>
                 {FrontendLang}
               </div>
             </Col>
             <Col md={4} xs={12} className="fullStackContainer">
               <div>
-                <h2 className="langSub">Full-Stack</h2>
+                <h2 className="langSub">Full Stack</h2>
                 {FullStackLang}
               </div>
             </Col>
